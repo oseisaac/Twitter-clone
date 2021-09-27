@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: 14px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.wd-container {
+  border: solid 1px;
+  border-color: rgb(47, 51, 54);
+  margin: 0 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 100%;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  max-width: 1000px;
+}
+
+.wd-top {
+  display: flex;
+  padding: 0 16px;
+  margin-bottom: 10px;
+}
+
+.wd-search-container {
+  display: flex;
+  height: 53px;
+  background-color: rgb(32, 35, 39);
+  min-width: 70px;
+  flex: 0.95;
+  border-radius: 30px;
+  align-items: center;
+}
+
+.wd-search-container > input {
+  border: none;
+  height: 100%;
+  outline: none;
+  flex: 1;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+}
+.wd-search-container > input::-webkit-input-placeholder {
+  color: rgb(110, 118, 125);
+}
+
+.wd-search-container > .material-icons {
+  width: 65px;
+  text-align: center;
+  color: rgb(110, 118, 125);
+  font-size: 1.8e;
+}
+
+.wd-settings {
+  display: flex;
+  margin: auto 12px auto auto;
+}
+.wd-settings a {
+  text-decoration: none;
+  color: rgb(29, 161, 242);
+}
+.wd-settings a > .material-icons-outlined {
+  padding: 10px;
+  border-radius: 30px;
+}
+.wd-settings a > .material-icons-outlined:hover {
+  background-color: rgb(239, 243, 244, 0.1);
+  cursor: pointer;
+}
+
+.wd-tabs {
+  display: flex;
+  flex-direction: row;
+  border-bottom: solid 1px;
+  border-color: rgb(47, 51, 54);
+}
+
+.wd-tabitem {
+  padding: 0 16px;
+  height: 53px;
+}
+
+.wd-tabitem a {
+  display: flex;
+  padding: 16px 0;
+  text-decoration: none;
+  color: rgb(110, 118, 125);
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.wd-tabactive a {
+  color: rgb(29, 161, 242);
+  border-bottom: solid 2px rgb(29, 161, 242);
+}
+
+.wd-divider {
+  height: 15px;
+  background-color: rgb(32, 35, 39);
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  border-color: rgb(47, 51, 54);
+}
+
+.wd-posts {
+  overflow: auto;
+  cursor: pointer;
+}
+.wd-post {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  font-size: 13px;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  border-color: rgb(47, 51, 54);
+}
+
+.wd-post-left {
+  flex: 1;
+}
+.wd-post-left > * {
+  line-height: 22px;
+}
+.wd-post-left .material-icons {
+  color: white;
+  font-size: 14px;
+}
+
+.wd-post-left .wd-major {
+  color: white;
+  font-weight: 700;
+}
+
+.wd-post-left .wd-minor {
+  color: rgb(110, 118, 125);
+  align-items: center;
+}
+.wd-post-left .wd-post-footer {
+  color: rgb(110, 118, 125);
+}
+.wd-post-left h5 {
+  font-size: 15px;
+  font-weight: bold;
+}
+.wd-post-right {
+}
+
+.wd-post-right .material-icons {
+  color: rgb(110, 118, 125);
+}
+.wd-post-right img {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  object-fit: cover;
+}
